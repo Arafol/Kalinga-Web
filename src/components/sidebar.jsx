@@ -95,9 +95,9 @@ export default function () {
               {showDropdown && (
                 <div className="p-2">
                   <NavLink
-                    to="/admin/report1"
+                    to="/admin/chart"
                     className={`grid grid-flow-col-dense items-center justify-center cursor-pointer w-full rounded-2xl gap-x-8 py-2 mb-5 ${
-                      isActiveRoute("admin/report1")
+                      isActiveRoute("chart")
                         ? "bg-secondary-default"
                         : " bg-transparent"
                     }`}
@@ -107,9 +107,9 @@ export default function () {
                     </h1>
                   </NavLink>
                   <NavLink
-                    to="/admin/report2"
+                    to="/admin/city"
                     className={`grid grid-flow-col-dense items-center justify-center cursor-pointer w-full rounded-2xl gap-x-8 py-2 mb-5 ${
-                      isActiveRoute("admin/report2")
+                      isActiveRoute("city")
                         ? "bg-secondary-default"
                         : " bg-transparent"
                     }`}
@@ -124,7 +124,7 @@ export default function () {
             <NavLink
               to="/admin"
               className={`grid items-center justify-center grid-flow-col-dense cursor-pointer w-full rounded-2xl gap-x-8 py-2 pl-4 mb-10 ${
-                isActiveRoute("admin/forum")
+                isActiveRoute("forum")
                   ? "bg-secondary-default"
                   : " bg-transparent"
               }`}

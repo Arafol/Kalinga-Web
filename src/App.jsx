@@ -5,7 +5,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Login, AdminDashboard } from "@/pages";
+import { Login, AdminDashboard, City, Chart } from "@/pages";
 import { RootLayout, NotFound, MainLayout, AdminLayout } from "@/layouts";
 import { MobileChecker } from "@/components";
 import { useMediaQuery } from "react-responsive";
@@ -24,6 +24,8 @@ const router = createBrowserRouter(
       {/* Private Routes */}
       <Route path="admin" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
+        <Route path="city" element={<City />} />
+        <Route path="chart" element={<Chart />} />
       </Route>
 
       {/* 404 */}
