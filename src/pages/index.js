@@ -1,3 +1,4 @@
 import Login from "./login";
+import AdminDashboard from "./admin";
 
-export { Login };
+export { Login, AdminDashboard };

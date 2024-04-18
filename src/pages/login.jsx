@@ -1,8 +1,15 @@
 import React from "react";
 import LoginIcon from "@assets/Login-Icon.png";
 import KalingaLogo from "@assets/Kalinga-Logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function () {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/admin");
+  };
+
   return (
     <>
       <section className="w-full min-h-screen body-color">
@@ -77,7 +84,10 @@ export default function () {
                     />
                   </div>
                   <div className="absolute xl:top-[30rem] lg:top-[24rem] xl:left-[17rem] lg:left-[14rem]">
-                    <button className="px-16 py-2 text-2xl text-white transition-all duration-300 ease-in-out rounded-3xl bg-primary-variant font-extralight hover:bg-secondary-default focus:outline-none focus:ring-2 focus:ring-primary-default focus:ring-opacity-50 active:bg-secondary-default">
+                    <button
+                      onClick={handleLogin}
+                      className="px-16 py-2 text-2xl text-white transition-all duration-300 ease-in-out rounded-3xl bg-primary-variant font-extralight hover:bg-secondary-default focus:outline-none focus:ring-2 focus:ring-primary-default focus:ring-opacity-50 active:bg-secondary-default"
+                    >
                       Login
                     </button>
                   </div>

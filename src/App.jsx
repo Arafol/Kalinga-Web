@@ -5,7 +5,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Login } from "@/pages";
+import { Login, AdminDashboard } from "@/pages";
 import { RootLayout, NotFound, MainLayout, AdminLayout } from "@/layouts";
 import { MobileChecker } from "@/components";
 import { useMediaQuery } from "react-responsive";
@@ -22,6 +22,9 @@ const router = createBrowserRouter(
       </Route>
 
       {/* Private Routes */}
+      <Route path="admin" element={<AdminLayout />}>
+        <Route index element={<AdminDashboard />} />
+      </Route>
 
       {/* 404 */}
       <Route path="*" element={<NotFound />} />

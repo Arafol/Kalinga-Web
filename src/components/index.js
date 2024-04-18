@@ -1,3 +1,4 @@
 import MobileChecker from "./mobileChecker";
+import Sidebar from "./sidebar";
 
-export { MobileChecker };
+export { MobileChecker, Sidebar };
