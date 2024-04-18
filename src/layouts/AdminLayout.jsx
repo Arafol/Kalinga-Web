@@ -6,13 +6,11 @@ import { block } from "million/react";
 const AdminLayout = () => {
   return (
     <>
-      <main>
-        <div className="z-[1000] fixed top-0">
+      <main className="flex">
+        <div className="z-[1000]">
           <Sidebar />
         </div>
-        <div>
-          <Outlet />
-        </div>
+        <Outlet />
       </main>
     </>
   );

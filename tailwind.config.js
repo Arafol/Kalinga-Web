@@ -56,6 +56,7 @@ module.exports = {
         },
         neutral: {
           primary: "#FFEECC",
+          variant: "#FFE7DA",
         },
       },
     },
