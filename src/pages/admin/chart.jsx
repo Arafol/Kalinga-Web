@@ -1,4 +1,5 @@
 import React from "react";
+import { PieChart, LoadPercentage } from "@components";
 
 export default function () {
   return (
@@ -21,7 +22,7 @@ export default function () {
           <h1 className="text-5xl text-primary-default">Reports</h1>
         </div>
         <hr className="border-t-2 border-primary-default" />
-        <div className="p-8 ">
+        <div className="px-8 py-6">
           <div className="flex flex-row items-center justify-center xl:gap-x-6 lg:gap-x-3">
             <h1 className="w-full text-3xl text-primary-default">
               Total Donations & Requests each Month
@@ -53,6 +54,17 @@ export default function () {
               </svg>
             </div>
           </div>
+        </div>
+        <div>
+          <div className="grid grid-flow-row-dense px-4 xl:grid-cols-2 gap-x-4">
+            <span>
+              <PieChart name="Donations" />
+            </span>
+            <span className="lg:pt-4 lg:pb-8 xl:p-0">
+              <PieChart name="Requests" />
+            </span>
+          </div>
+          <LoadPercentage name="Lactating Mothers" />
         </div>
       </section>
     </>

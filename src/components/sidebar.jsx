@@ -8,10 +8,15 @@ export default function () {
 
   const isActiveRoute = (route) => {
     const currentPath = window.location.pathname;
-    if (currentPath === "/admin" && route === "admin") {
+    if (
+      (currentPath === "/admin" && route === "admin") ||
+      currentPath === `/admin/${route}` ||
+      (currentPath === "/admin/approved" && route === "forum") ||
+      (currentPath === "/admin/rejected" && route === "forum")
+    ) {
       return true;
     }
-    return currentPath.startsWith(`/admin/${route}`);
+    return false;
   };
 
   const handleSignOut = () => {
@@ -20,7 +25,7 @@ export default function () {
 
   return (
     <>
-      <section className="flex flex-col justify-between w-full h-screen p-6 body-color">
+      <section className="flex flex-col justify-between w-full h-full p-6 body-color">
         <div>
           <div className="grid items-center justify-center grid-flow-col-dense pb-16 gap-x-2">
             <img src={KalingaLogo} alt="KalingaLogo" />
@@ -122,7 +127,7 @@ export default function () {
               )}
             </div>
             <NavLink
-              to="/admin"
+              to="/admin/forum"
               className={`grid items-center justify-center grid-flow-col-dense cursor-pointer w-full rounded-2xl gap-x-8 py-2 pl-4 mb-10 ${
                 isActiveRoute("forum")
                   ? "bg-secondary-default"

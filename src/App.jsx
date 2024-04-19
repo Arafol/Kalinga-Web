@@ -5,7 +5,15 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Login, AdminDashboard, City, Chart } from "@/pages";
+import {
+  Login,
+  AdminDashboard,
+  City,
+  Chart,
+  Forum,
+  Approved,
+  Rejected,
+} from "@/pages";
 import { RootLayout, NotFound, MainLayout, AdminLayout } from "@/layouts";
 import { MobileChecker } from "@/components";
 import { useMediaQuery } from "react-responsive";
@@ -26,6 +34,9 @@ const router = createBrowserRouter(
         <Route index element={<AdminDashboard />} />
         <Route path="city" element={<City />} />
         <Route path="chart" element={<Chart />} />
+        <Route path="forum" element={<Forum />} />
+        <Route path="approved" element={<Approved />} />
+        <Route path="rejected" element={<Rejected />} />
       </Route>
 
       {/* 404 */}
