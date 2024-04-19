@@ -62,7 +62,7 @@ export default function () {
                   d="M8.557 2.75H4.682A1.932 1.932 0 0 0 2.75 4.682v3.875a1.942 1.942 0 0 0 1.932 1.942h3.875a1.942 1.942 0 0 0 1.942-1.942V4.682A1.942 1.942 0 0 0 8.557 2.75m10.761 0h-3.875a1.942 1.942 0 0 0-1.942 1.932v3.875a1.943 1.943 0 0 0 1.942 1.942h3.875a1.942 1.942 0 0 0 1.932-1.942V4.682a1.932 1.932 0 0 0-1.932-1.932M8.557 13.5H4.682a1.943 1.943 0 0 0-1.932 1.943v3.875a1.932 1.932 0 0 0 1.932 1.932h3.875a1.942 1.942 0 0 0 1.942-1.932v-3.875a1.942 1.942 0 0 0-1.942-1.942m8.818-.001a3.875 3.875 0 1 0 0 7.75a3.875 3.875 0 0 0 0-7.75"
                 />
               </svg>
-              <h1 className="text-4xl text-neutral-primary">Dashboard</h1>
+              <h1 className="text-3xl text-neutral-primary">Dashboard</h1>
             </NavLink>
             <div>
               <div
@@ -84,7 +84,7 @@ export default function () {
                     d="M9 21h6m-6 0v-5m0 5H3.6a.6.6 0 0 1-.6-.6v-3.8a.6.6 0 0 1 .6-.6H9m6 5V9m0 12h5.4a.6.6 0 0 0 .6-.6V3.6a.6.6 0 0 0-.6-.6h-4.8a.6.6 0 0 0-.6.6V9m0 0H9.6a.6.6 0 0 0-.6.6V16"
                   />
                 </svg>
-                <h1 className="text-4xl text-neutral-primary">Reports</h1>
+                <h1 className="text-3xl text-neutral-primary">Reports</h1>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -145,13 +145,13 @@ export default function () {
                   d="M7.23 16.23q-.326 0-.547-.22q-.221-.222-.221-.548v-1h11.75l.634.634V6h1q.327 0 .548.221t.221.548v12.539l-3.077-3.077zm-3.845-.692V3.77q0-.327.22-.548T4.155 3h11.923q.327 0 .548.221t.221.548v7.923q0 .327-.221.548t-.548.222H6.462zm12.461-4.076V4H4.385v8.846l1.384-1.384zm-11.461 0V4z"
                 />
               </svg>
-              <h1 className="text-4xl text-neutral-primary">
+              <h1 className="text-3xl text-neutral-primary">
                 Forum <br /> Moderation
               </h1>
             </NavLink>
           </div>
         </div>
-        <div className="grid items-center justify-center grid-flow-col-dense gap-x-4">
+        <div className="grid items-center justify-center grid-flow-col-dense mb-6 gap-x-4">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ export default function () {
           </span>
           <button
             onClick={handleSignOut}
-            className="text-4xl text-neutral-primary"
+            className="text-3xl text-neutral-primary"
           >
             Sign Out
           </button>

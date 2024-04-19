@@ -22,7 +22,7 @@ export default function () {
           <h1 className="text-5xl text-primary-default">Reports</h1>
         </div>
         <hr className="border-t-2 border-primary-default" />
-        <div className="px-8 py-6">
+        <div className="px-8 py-4">
           <div className="flex flex-row items-center justify-center xl:gap-x-6 lg:gap-x-3">
             <h1 className="w-full text-3xl text-primary-default">
               Total Donations & Requests each Month

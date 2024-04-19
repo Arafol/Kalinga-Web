@@ -15,7 +15,7 @@ export default function ({ name }) {
 
   return (
     <>
-      <div className="flex items-center justify-center pt-6 xl:flex-col lg:gap-x-6 xl:gap-x-0">
+      <div className="flex items-center justify-center py-3 xl:flex-col lg:gap-x-6 xl:gap-x-0">
         <div className="relative">
           <svg
             className="w-[95%] h-[95%]"
@@ -43,7 +43,7 @@ export default function ({ name }) {
             {progress}%
           </div>
         </div>
-        <h1 className="pt-4 text-3xl text-primary-default">{name}</h1>
+        <h1 className="py-2 text-3xl text-primary-default">{name}</h1>
       </div>
     </>
   );

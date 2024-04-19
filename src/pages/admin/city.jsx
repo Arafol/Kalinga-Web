@@ -21,7 +21,7 @@ export default function () {
           <h1 className="text-5xl text-primary-default">Reports</h1>
         </div>
         <hr className="border-t-2 border-primary-default" />
-        <div className="p-8 ">
+        <div className="p-8">
           <div className="flex flex-row items-center justify-center xl:gap-x-6 lg:gap-x-3">
             <h1 className="w-full text-3xl text-primary-default">
               Total Donations & Requests each City
@@ -54,7 +54,7 @@ export default function () {
             </div>
           </div>
         </div>
-        <div className="xl:px-8 lg:px-2 flex items-center justify-center w-full h-[65%] 2xl:gap-x-32 xl:gap-x-20 lg:gap-x-8">
+        <div className="xl:px-8 lg:px-2 flex items-center justify-center w-full h-[60%] 2xl:gap-x-32 xl:gap-x-20 lg:gap-x-8">
           <div className="flex flex-col items-center justify-center gap-y-12">
             <h1 className="text-4xl text-center text-primary-default">
               Donations
@@ -63,7 +63,7 @@ export default function () {
               <h1 className="pb-4 text-6xl text-center text-primary-default">
                 10
               </h1>
-              <p className="text-4xl text-center text-primary-default">
+              <p className="text-2xl text-center text-primary-default">
                 Successful
               </p>
             </div>
@@ -71,7 +71,7 @@ export default function () {
               <h1 className="pb-4 text-6xl text-center text-primary-default">
                 0
               </h1>
-              <p className="text-4xl text-center text-primary-default">
+              <p className="text-2xl text-center text-primary-default">
                 Unsuccessful
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function () {
               <h1 className="pb-4 text-6xl text-center text-primary-default">
                 10
               </h1>
-              <p className="text-4xl text-center text-primary-default">
+              <p className="text-2xl text-center text-primary-default">
                 Successful
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function () {
               <h1 className="pb-4 text-6xl text-center text-primary-default">
                 0
               </h1>
-              <p className="text-4xl text-center text-primary-default">
+              <p className="text-2xl text-center text-primary-default">
                 Unsuccessful
               </p>
             </div>

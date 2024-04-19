@@ -26,7 +26,7 @@ export default function () {
         </div>
         <hr className="border-t-2 border-primary-default" />
 
-        <div className="flex items-center justify-center p-10 h-5/6">
+        <div className="flex items-center justify-center p-10 my-32">
           <div className="grid grid-cols-2 gap-12">
             <div className="px-16 py-8 bg-white rounded-lg shadow-xl">
               <div className="grid items-center justify-center grid-cols-[40%_1fr]">
